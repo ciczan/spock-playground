@@ -27,7 +27,7 @@ import static spock.util.matcher.HamcrestMatchers.closeTo
  */
 class HamcrestMatchersSpec extends Specification {
   def "comparing two decimal numbers"() {
-    def myPi = 3.14
+    def myPi = 3.141592
 
     expect:
     myPi closeTo(Math.PI, 0.01)
